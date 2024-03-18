@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans',sans-serif;
+  }
+  body{
+    background: url(https://i.makeagif.com/media/2-23-2023/rjkVNi.gif),no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  li{
+       list-style: none;
+  }
+  a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+  }
+  a:hover{
+    color: orange;
+  }
+  /*hedear*/
+  header{
+    width: 100%;
+    height: 60px;
+    background: url('https://cdn2.cellphones.com.vn/1200x400/https://cdn.sforum.vn/sforum/wp-content/uploads/2024/01/hinh-nen-anime-thumb.jpg'),no-repeat;
+    background-size: cover;
+    box-shadow: 5px 5px 5px 5px rgb(108, 108, 255);
+  } header .navbar{
+     width: 100%;
+    height: 60px;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgb(136, 136, 255);
+    box-shadow: 2px ;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    position: fixed;
+  } .navbar .logo{
+    width: 15%;
+    height: 100%;
+    text-align: center;
+  }.bx{
+    margin-top: 10%;
+  }.navbar .links{
+    display: flex;
+    gap:6%;
+    width: 75%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+   .btn{
+    width: 10%;
+    height: 100%;
+    font-size: 25px;
+    padding-left: 4.5%;
+    margin-top: 2%;
+  }
+  .baoquat{
+    width: 100%;
+    height: 1300px;
+    z-index: -5;
+  }
+.warpper{
+    margin-top: 10px;
+    width: 100%;
+    height: 800px;
+    position: relative;
+    background: transparent;
+    backdrop-filter: blur(5px);
+}
+.conten1{
+    position: relative;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    column-gap: 1rem;
+}
+.slideshow {
+    position: relative;
+    width: 60%;
+    height: 100%; /* Điều chỉnh chiều cao tùy ý */
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+  }.mot{
+    padding: 0;
+    margin: 0;
+     width: 100%;
+     height: 100%;
+     border-radius: 12px;
+  
+  }.slideshow .mot {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease; /* Hiệu ứng chuyển đổi */
+  }/* Hiệu ứng chuyển động */
+  @keyframes slideshow {
+      0%{opacity:0;}
+      20%,40% { opacity: 1; }
+     50%,100% { opacity: 0; }
+  }
+  .slideshow .mot.active {
+    opacity: 1;
+  }.slideshow .mot:nth-child(1) {
+    animation: slideshow 12s infinite 0s;
+  }
+  .slideshow .mot:nth-child(2) {
+    animation: slideshow 12s infinite 3s;
+  }
+  
+  .slideshow .mot:nth-child(3) {
+    animation: slideshow 12s infinite 6s;
+  }
+  .slideshow .mot:nth-child(4){
+      animation: slideshow 12s infinite 9s;
+  }
+
+.giua1{
+    width: 40%;
+    height: 100%;
+    background: url("https://i.pinimg.com/originals/cc/c8/39/ccc839332d89d6150db61b7e47da89f1.gif"),no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    position: relative;
+}.giua1-2{
+    width: 100%;
+    height:100%;
+    background: transparent;
+    backdrop-filter: blur(5px);
+    position: absolute;
+    border-radius: 12px;
+    box-shadow: 0px 10px 5px 5px rgb(255, 154, 154);
+   
+
+} .dau{
+    margin-top: 15%;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    word-wrap: break-word;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}  .anh1{
+    width: 30%;
+    height: 70%;
+    float: left;
+    margin: 1%;
+    position: relative;
+    transition: 0.5s;
+}
+.anh2
+{
+    background: url( https://i.pinimg.com/736x/c4/85/5d/c4855db2917d95fbddc8a7de8bff8f61.jpg);
+}
+.anh3{
+    background: url(https://i.pinimg.com/736x/df/33/3a/df333a5512113bbb276f27676b75eb23.jpg);
+}
+.anh4{
+    background: url(https://khodocsach.com/wp-content/uploads/2023/07/Dau-pha-thuong-khung-cover.jpg);
+}
+.anh5{
+    background: url(https://i.pinimg.com/736x/90/cf/59/90cf59233633dd668b04df67e77e20e4.jpg);
+}
+.video{
+  display: none;}.anh2, .anh3, .anh4, .anh5{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 12px;
+    border: 1px solid paleturquoise;
+}.gioithieu{
+    width: 90%;
+    height: 50%;
+   
+    text-align: center;
+    
+}.anh1:hover{
+    width: 40%;
+    height: 80%;
+}.chu{
+    width: 100%;
+    height: 20%;
+    align-items: center;
+    text-align: center;
+    padding-top: 10%;
+    color: rgb(151, 181, 255);
+    filter: drop-shadow(5px 5px 5px rgb(124, 255, 225));
+    font-size: 30px;
+}
+.conten2{
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+}
+.weocome{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    
+}.chaomung{
+    filter: drop-shadow(5px 5px 5px red);
+}.weocome2{
+    width: 80%;
+    height: 80%;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    margin-left: 10%;
+    overflow-y: scroll;
+    
+}
+.weocome2::-webkit-scrollbar{
+    display: none;
+}
+.baoquat .warpper2{
+  width: 100%;
+  height: 500px;
+  background:url(https://i.pinimg.com/originals/99/c6/ca/99c6cadb02d2174dfcbebe7f46bba09f.gif),no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow-y: scroll;
+  justify-content: center;
+}
+.warpper2::-webkit-scrollbar{
+  display: none;
+}.noibat{
+  width: 80%;
+  height: 40px;
+  margin-left: 10%;
+  display: flex;
+  gap: 0.5%;
+  margin-top: 20px;
+}.phim-noibat{
+  width: 80%;
+  height: 300px;
+  background:url(https://i.gifer.com/9DNY.gif),no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: 10%;
+  overflow-x: scroll;
+  border: 2px solid gray;
+  border-radius: 12px;
+}.phim-noibat::-webkit-scrollbar{
+  display: none;
+}.phimhay{
+  width: 2000px;
+  height: 90%;
+  background:transparent;
+  backdrop-filter: blur(5px);
+  display: flex;
+  gap: 1%;
+  margin-top:1% ;
+}
+.phimhay .phim1{
+  width: 10%;
+  height: 90%;
+  background: pink;
+  border-radius: 12px;
+  transition: .5s;
+  margin-top: 0.5%;
+}
+.phim1 .phim1-1 , .phim1-2,.phim1-3,.phim1-4,.phim1-5,.phim1-6,.phim1-7,.phim1-8,.phim1-9,.phim1-10,.phim1-11,.phim1-12,.phim1-13,.phim1-14,.phim1-15,.phim1-16,.phim1-17,.phim1-18{
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  border: 1px solid rgb(143, 143, 255);
+}
+.phim1-1{
+  background: url(https://bloganchoi.com/wp-content/uploads/2021/10/thanh-guom-diet-quy.jpg),no-repeat;
+  background-position: center;
+  background-size: cover;}
+  .phim1-2{
+  background: url(https://cdn.24h.com.vn/upload/2-2022/images/2022-04-14/s--cvdsvc-1649918307-332-width563height750.jpg),no-repeat;
+  background-position: center;
+  background-size: cover;}
+.phim1-3{
+  background: url(https://genk.mediacdn.vn/2018/5/19/anh1-15267054340221991775830.jpg),no-repeat;
+  background-position: center;
+  background-size: cover;}
+.phim1-4{
+  background: url(https://cf.shopee.vn/file/5de0358516ac8098ded849f7c9024d19),no-repeat;
+  background-position: center;
+  background-size: cover;}
+.phim1-5{
+  background: url(https://bloganchoi.com/wp-content/uploads/2022/12/top-anime-hot-nhat-2022-5.jpg),no-repeat;
+  background-position: center;
+  background-size: cover;}
+.phim1-6{
+  background: url(https://upload.wikimedia.org/wikipedia/vi/2/2b/Pok%C3%A9mon_the_Series_XY_anime_poster.jpg),no-repeat;
+  background-position: center;
+  background-size: cover;
+}.phim1-7{
+  background: url(https://images-cdn.ubuy.co.in/6360f5cde4f663292f7d8fc2-haikyuu-poster-season-1-key-art-english.jpg),no-repeat;
+  background-position: center;
+  background-size: cover;
+}.phim1-8{
+  background: url(https://bloganchoi.com/wp-content/uploads/2021/10/one-piece-dao-hai-tac-696x975.jpg),no-repeat;
+  background-position: center;
+  background-size: cover;
+}.phim1-9{
+  background: url(https://i.ex-cdn.com/mgn.vn/files/content/2022/01/06/18-0857.jpg),no-repeat;
+  background-position: center;
+  background-size: cover;
+}.phim1-10{
+  background: url(https://bizweb.dktcdn.net/100/438/408/files/anime-am-nhac.jpg?v=1704420336389),no-repeat;
+  background-position: center;
+  background-size: cover;
+}.phim1-11{
+  background: url(https://upload.wikimedia.org/wikipedia/vi/4/4c/Violet_evergarden_hoi_uc_khong_quen_film_poster.jpg),no-repeat;
+  background-position: center;
+  background-size: cover;
+}.phim1-12{
+  background: url(https://cf.shopee.vn/file/99c17882616bf22af2c7f04dc686592b),no-repeat;
+  background-position: center;
+  background-size: cover;
+}.phim1-13{
+  background: url(https://www.elle.vn/wp-content/uploads/2023/03/21/521442/phim-anime-the-wind-rises-1024x1517.jpg),no-repeat;
+  background-position: center;
+  background-size: cover;
+}.phim1-14{
+  background: url(https://thegioidienanh.vn/stores/news_dataimages/thanhtan/022023/23/11/in_article/4941_image008.png?rt=20230223115010),no-repeat;
+  background-position: center;
+  background-size: cover;
+}.phim1-15{
+  background: url(https://khenphim.com/wp-content/uploads/2021/04/Detective-Conan-20th-1-poster_KP.jpg),no-repeat;
+  background-position: center;
+  background-size: cover;
+}.phim1-16{
+  background: url(https://animehay.city//upload/poster/3980.jpg),no-repeat;
+  background-position: center;
+  background-size: cover;
+}.phim1-17{
+  background: url(https://bachngocsach.com.vn/forum/attachments/1483/),no-repeat;
+  background-position: center;
+  background-size: cover;
+}.phim1-18{
+  background: url(https://bloganchoi.com/wp-content/uploads/2022/04/liang-bu-yi-luong-bat-nghi-696x870.jpg),no-repeat;
+  background-position: center;
+  background-size: cover;
+}.phimhay .phim1:hover{
+  width: 12%;
+  height: 95%;
+}.khoi{
+  width: 0.3%;
+  height: 70%;
+  background: black;
+  margin-left: 20%;
+  margin-top: 0.5%;
+  box-shadow: 0 5px 5px red;
+}
+.phim-chu{
+  margin-top: 0.5%;
+}
+footer{
+    width: 100%;
+    height:200px;
+    display: flex;
+    column-gap: 3%;
+    justify-content: center;
+    background: black;
+    z-index: 200;
+}
+footer .box{
+    margin-top: 2%;
+    width: 30%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.box .logof{
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    color: #fff;
+}
+.logof .logo1{
+    width: 25%;
+    height: 40%;
+}
+h3{
+    color: #fff;
+    font-size: 100%;
+}
+.box .box1{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.box .box1 form input {
+  width: 110px;
+}
+
+img{
+    width: 30px;
+    margin-top: 10px;
+}
+
